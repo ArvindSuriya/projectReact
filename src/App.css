@@ -1,0 +1,120 @@
+/* .App { */
+
+/* text-align: center; */
+
+/* } */
+
+#orderDetails,
+#customerDetails,
+#currencyDetails,
+#addressDetails,
+#locationDetails {
+  display: flex;
+  margin: 35px 20px;
+  justify-content: space-between;
+}
+
+#addressDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  background-color: blue;
+  color: white;
+  height: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.field {
+  width: 100%;
+  height: 35px;
+  margin: 5px 0px;
+  border-style:double
+}
+.city,
+.state,
+.postal,
+.country {
+    display: flex;
+    align-items: center;
+}
+.city > .field{
+    width: 280px;
+}
+.state > .field {
+    width: 20%;
+}
+.postal >.field{
+    width:120px;
+}
+.name,
+.discription {
+  width: 48%;
+}
+
+#locationDetails > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#locationDetails > input[type="text"] {
+  width: 235px;
+}
+
+select {
+  margin: 8px 0;
+  width: 240px;
+  height: 35px;
+  background-color: white;
+  border-color: black;
+  border-width: 2px;
+}
+
+.divTitle {
+  color: blue;
+}
+
+.selectField {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
